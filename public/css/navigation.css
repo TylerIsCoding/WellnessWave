@@ -1,0 +1,11 @@
+.landing-page-header-nav {
+  flex-direction: row;
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}

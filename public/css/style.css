@@ -1,0 +1,29 @@
+/* style.css */
+@import 'reset.css';
+@import 'typography.css';
+@import 'Layout.css';
+@import 'navigation.css';
+@import 'custom-styles.css';
+@import 'responsive.css';
+@import 'header-footer.css';
+@import 'login-signup.css';
+@import 'normalize.css';
+:root {
+  /* Define color variables */
+  --background-color: #CDEBFF;
+  --background-Two-color: #FFF;
+  --text-color: #373947;
+  --buttons-color: #3782FF;
+}
+
+/* Import other stylesheets */
+
+/* 
+  reset.css: Reset styles to ensure a consistent starting point across browsers.
+  typography.css: Styles related to fonts and text.
+  layout.css: Styles for the overall layout structure.
+  navigation.css: Styles specific to navigation elements.
+  header-footer.css: Styles for header and footer sections.
+  custom-styles.css: Custom styles for specific elements in your app.
+  responsive.css: Styles for making your app responsive.
+*/

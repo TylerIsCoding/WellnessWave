@@ -1,0 +1,6 @@
+.Page-Header {
+  width: 100%; /* Use a percentage-based width */
+  height: auto;
+  max-width: auto; /* Set a maximum width if needed */
+  box-sizing: border-box; /* Include padding in the width */
+}
