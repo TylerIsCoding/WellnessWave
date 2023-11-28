@@ -1,5 +1,5 @@
 module.exports = {
     getIndex: (req, res) => {
-        res.render("index.html");
+        res.sendFile("login.html");
     },
 };

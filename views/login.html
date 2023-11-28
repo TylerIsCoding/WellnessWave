@@ -1,71 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Wellness Wave</title>
-    <link rel="stylesheet" href="/public/css/normalize.css">
-    <link rel="stylesheet" href="/public/css/style.css">
-</head>
-<body>
-    <header>
-        <!-- Mobile Header -->
-        <section class="mobile-header">
-            <a href="/views/index.html"><img src="/public/images/logo.png" alt="wellness wave logo"></a>
-            <img src="/public/images/hamburger-menu.svg" alt="hamburger menu">
-        </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login - Wellness Wave</title>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <!-- Mobile Header -->
+            <section class="mobile-header">
+                <a href="index.html"
+                    ><img src="images/logo.png" alt="wellness wave logo"
+                /></a>
+                <img src="images/hamburger-menu.svg" alt="hamburger menu" />
+            </section>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu">
-            <!-- Mobile menu links go here -->
-        </div>
-
-        <!-- Desktop Header -->
-
-    </header>
-
-<section class="login-section">
-    <div class="image-side">
-        <nav class="desktop-header">
-            <ul>
-                <li class="logo"><a href=""><img src="/public/images/logo.png" alt="Logo"></a></li>
-                <li><a href="">Wellness Wave</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact Us</a></li>
-            </ul>
-        </nav>
-        <img src="/public/images/jumprope.svg" alt="jump roping person">
-    </div>
-        <div class="form-side">
-            <h1>Login to your Account</h1>
-            <span class="header-detail">Let's make some progress</span>
-            <a href="/auth/google" class="google-signin-button"><img src="/public/images/google.svg" alt="google signin button">Continue with Google</a>
-            <div class="or-container">
-                <span class="or-divider"></span>
-                <span class="or-text">or Sign in with Email</span>
-                <span class="or-divider"></span>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu">
+                <!-- Mobile menu links go here -->
             </div>
-            
-            <form>
-                <label for="username">Email</label>
-                <input class="email" type="text" id="username" name="username" placeholder="Enter your email" required>
-                <label for="password">Password</label>
-                <input class="password" type="password" id="password" name="password" placeholder="Password" required>
-                <div class="forget-pass">
-                    <div>
-                        <input type="checkbox" id="remember-me" name="remember-me">
-                        <label  for="remember-me"> Remember Me?</label>
-                    </div>
-                    <div>
-                        <a href="/">Forgot Password?</a>
-                    </div>
-                </div>
-                <button type="submit">Login</button>
-            </form>
-            <span class="new-member">New Member? <a href="/">Register now</a></span>
-        </div>
-    
-</section>
 
-</body>
+            <!-- Desktop Header -->
+        </header>
+
+        <section class="login-section">
+            <div class="image-side">
+                <nav class="desktop-header">
+                    <ul>
+                        <li class="logo">
+                            <a href=""
+                                ><img src="images/logo.png" alt="Logo"
+                            /></a>
+                        </li>
+                        <li><a href="">Wellness Wave</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <img src="images/jumprope.svg" alt="jump roping person" />
+            </div>
+            <div class="form-side">
+                <h1>Login to your Account</h1>
+                <span class="header-detail">Let's make some progress</span>
+                <a href="/login" class="google-signin-button"
+                    ><img
+                        src="images/google.svg"
+                        alt="google signin button"
+                    />Continue with Google</a
+                >
+                <div class="or-container">
+                    <span class="or-divider"></span>
+                    <span class="or-text">or Sign in with Email</span>
+                    <span class="or-divider"></span>
+                </div>
+
+                <form>
+                    <label for="username">Email</label>
+                    <input
+                        class="email"
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter your email"
+                        required
+                    />
+                    <label for="password">Password</label>
+                    <input
+                        class="password"
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Password"
+                        required
+                    />
+                    <div class="forget-pass">
+                        <div>
+                            <input
+                                type="checkbox"
+                                id="remember-me"
+                                name="remember-me"
+                            />
+                            <label for="remember-me"> Remember Me?</label>
+                        </div>
+                        <div>
+                            <a href="/">Forgot Password?</a>
+                        </div>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+                <span class="new-member"
+                    >New Member? <a href="/">Register now</a></span
+                >
+            </div>
+        </section>
+    </body>
 </html>
