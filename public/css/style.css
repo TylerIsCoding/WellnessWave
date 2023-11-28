@@ -54,6 +54,11 @@ ul, ol {
     width: 55px;
 }
 
+.landing-page-img { /*for mobile it's the jumprope*/
+    background-image: url('public/images/jumprope.svg');
+    
+}
+
 
 /* Login Section Majority Mobile (some generic styling that rolls over) */
 
@@ -62,7 +67,7 @@ form {
     flex-direction: column;
 }
 
-.form-side h1 {
+.login-side h1 {
     font-weight: 400;
 }
 
@@ -113,7 +118,7 @@ form {
     background-color: #ccc; /* Adjust the color as needed */
 }
 
-.form-side {
+.login-side {
     width: 85%;
     margin: 0 auto;
 }
@@ -127,13 +132,17 @@ input {
 
 button {
     padding: 1rem;
-    background-color: #4299e1;
+    background-color: var(--buttons-color);
     border-radius: 5px;
     border: none;
     margin-top: 3rem;
     color:white;
     text-transform: uppercase;
     cursor: pointer;
+    width: 420px; 
+    height: 50px;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 .forget-pass {
@@ -197,11 +206,11 @@ button {
     }
 
   .image-side {
-        background-color: #cdebff;
+        background-color: var(--background-color);
         flex: 0 0 55%;
     }
 
-    .form-side{
+    .login-side{
         flex: 0 0 25%; /* 25% width for form-side */
     }
 
@@ -209,4 +218,42 @@ button {
         width: 100%;
     }
 
+    .landing-page-img-container {
+        height: 100%;
+        width: 100%;
+        background-color: aquamarine; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .landing-page-img {
+        background-image: url('public/images/runningDude.jpg'); /*for desktop it's the running dude*/
+        background-color: orange; /* this is just to help visualize where the image is since it's not working on my end*/
+        height: 70%;
+        width: 70%;
+    }
+
+    .right-side-container {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(255, 255, 255); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-side {
+        background-color: bisque; /* to help visualize*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-side-img {
+        background-image: url('public/images/#379_fitness_flatline.jpg');
+        background-color: orange; /* to help visualize */
+        height: 400px;
+        width: 400px;
+    }
 }
