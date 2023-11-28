@@ -1,0 +1,212 @@
+img {
+    max-width: 100%; /* Make sure images don't exceed their container width */
+    height: auto; /* Allow images to scale vertically while maintaining aspect ratio */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+
+
+/* Mobile Header  */
+
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 60px;
+}
+
+.mobile-header a {
+    width: 60px;
+}
+
+
+/* Desktop Header */
+
+.desktop-header a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.desktop-header ul {
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+    font: bold;
+}
+
+.desktop-header {
+    padding: 1rem;
+}
+
+.logo {
+    width: 55px;
+}
+
+
+/* Login Section Majority Mobile (some generic styling that rolls over) */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-side h1 {
+    font-weight: 400;
+}
+
+.header-detail {
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.google-signin-button {
+    display: flex;
+    padding: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: #808080;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #D3D3D3;
+    border-radius: 5px;
+    gap: 1rem;
+    font-weight: 500;
+  }
+
+.google-signin-button img {
+    width: 25px;
+}
+
+.google-signin-button + span {
+    color: #808080;
+    margin: 3rem 0 3rem 0
+}
+
+.or-container {
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin: 1rem 0 1rem 0;
+}
+
+.or-text {
+    color:#808080;
+    padding: 1rem;
+}
+
+.or-divider {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc; /* Adjust the color as needed */
+}
+
+.form-side {
+    width: 85%;
+    margin: 0 auto;
+}
+
+input {
+    padding:1rem;
+    border-radius: 5px;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+}
+
+button {
+    padding: 1rem;
+    background-color: #4299e1;
+    border-radius: 5px;
+    border: none;
+    margin-top: 3rem;
+    color:white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.forget-pass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forget-pass div ~ div {
+    color:#4299e1;
+}
+
+.new-member  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    margin-top: 1rem;
+}
+
+.email {
+    background-image: url(/public/images/email.png) ;
+    background-repeat: no-repeat;
+    background-size: 20px 20px ;
+    background-position: right 10px center;
+}
+
+.password {
+    background-image: url(/public/images/lock.png) ;
+    background-repeat: no-repeat;
+    background-size: 20px 20px ;
+    background-position: right 10px center;
+}
+
+/* Example media query for smaller screens */
+@media (max-width: 1024px) {
+    .desktop-header {
+        display: none;
+    }
+}
+
+
+/* Example media query for larger screens */
+
+@media (min-width: 1024px) {
+    .mobile-header {
+        display: none; /* Hide the mobile menu for screens wider than 1024 pixels */
+    }
+
+    .desktop-menu {
+        display: flex; /* Show the desktop menu for screens wider than 1024 pixels */
+    }
+    .login-section {
+        display:flex;
+        height: 100vh;
+        overflow: hidden;
+        /* flex: 1; */
+    }
+    .desktop-split-view {
+        display: flex;
+    }
+
+  .image-side {
+        background-color: #cdebff;
+        flex: 0 0 55%;
+    }
+
+    .form-side{
+        flex: 0 0 25%; /* 25% width for form-side */
+    }
+
+   .image-side img {
+        width: 100%;
+    }
+
+}
