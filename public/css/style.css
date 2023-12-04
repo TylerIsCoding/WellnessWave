@@ -1,17 +1,16 @@
 img {
-    max-width: 100%; /* Make sure images don't exceed their container width */
-    height: auto; /* Allow images to scale vertically while maintaining aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
 
 * {
     box-sizing: border-box;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
-
-
 
 /* Mobile Header  */
 
@@ -27,7 +26,6 @@ ul, ol {
     width: 60px;
 }
 
-
 /* Desktop Header */
 
 .desktop-header a {
@@ -40,7 +38,7 @@ ul, ol {
 
 .desktop-header ul {
     display: flex;
-    gap:1rem;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
     font: bold;
@@ -54,11 +52,10 @@ ul, ol {
     width: 55px;
 }
 
-.landing-page-img { /*for mobile it's the jumprope*/
-    background-image: url('public/images/jumprope.svg');
-    
+.landing-page-img {
+    /*for mobile it's the jumprope*/
+    background-image: url("/images/jumprope.svg");
 }
-
 
 /* Login Section Majority Mobile (some generic styling that rolls over) */
 
@@ -85,11 +82,11 @@ form {
     color: #808080;
     justify-content: center;
     align-items: center;
-    border: 2px solid #D3D3D3;
+    border: 2px solid #d3d3d3;
     border-radius: 5px;
     gap: 1rem;
     font-weight: 500;
-  }
+}
 
 .google-signin-button img {
     width: 25px;
@@ -97,7 +94,7 @@ form {
 
 .google-signin-button + span {
     color: #808080;
-    margin: 3rem 0 3rem 0
+    margin: 3rem 0 3rem 0;
 }
 
 .or-container {
@@ -108,7 +105,7 @@ form {
 }
 
 .or-text {
-    color:#808080;
+    color: #808080;
     padding: 1rem;
 }
 
@@ -124,10 +121,10 @@ form {
 }
 
 input {
-    padding:1rem;
+    padding: 1rem;
     border-radius: 5px;
-    margin-top:0.5rem;
-    margin-bottom:0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 button {
@@ -136,10 +133,10 @@ button {
     border-radius: 5px;
     border: none;
     margin-top: 3rem;
-    color:white;
+    color: white;
     text-transform: uppercase;
     cursor: pointer;
-    width: 420px; 
+    width: 420px;
     height: 50px;
     font-size: 18px;
     font-weight: 800;
@@ -152,28 +149,28 @@ button {
 }
 
 .forget-pass div ~ div {
-    color:#4299e1;
+    color: #4299e1;
 }
 
-.new-member  {
+.new-member {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:0.5rem;
+    gap: 0.5rem;
     margin-top: 1rem;
 }
 
 .email {
-    background-image: url(/public/images/email.png) ;
+    background-image: url("/images/email.png");
     background-repeat: no-repeat;
-    background-size: 20px 20px ;
+    background-size: 20px 20px;
     background-position: right 10px center;
 }
 
 .password {
-    background-image: url(/public/images/lock.png) ;
+    background-image: url("/images/lock.png");
     background-repeat: no-repeat;
-    background-size: 20px 20px ;
+    background-size: 20px 20px;
     background-position: right 10px center;
 }
 
@@ -183,7 +180,6 @@ button {
         display: none;
     }
 }
-
 
 /* Example media query for larger screens */
 
@@ -195,40 +191,45 @@ button {
     .desktop-menu {
         display: flex; /* Show the desktop menu for screens wider than 1024 pixels */
     }
+
     .login-section {
-        display:flex;
+        display: flex;
         height: 100vh;
         overflow: hidden;
         /* flex: 1; */
     }
+
     .desktop-split-view {
         display: flex;
     }
 
-  .image-side {
+    .image-side {
         background-color: var(--background-color);
         flex: 0 0 55%;
     }
 
-    .login-side{
+    .login-side {
         flex: 0 0 25%; /* 25% width for form-side */
     }
 
-   .image-side img {
+    .image-side img {
         width: 100%;
     }
 
     .landing-page-img-container {
         height: 100%;
         width: 100%;
-        background-color: aquamarine; 
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .landing-page-img {
-        background-image: url('public/images/runningDude.jpg'); /*for desktop it's the running dude*/
-        background-color: orange; /* this is just to help visualize where the image is since it's not working on my end*/
+        background-image: url("/images/runningDude.svg"); /*for desktop it's the running dude*/
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
         height: 70%;
         width: 70%;
     }
@@ -236,7 +237,7 @@ button {
     .right-side-container {
         height: 100%;
         width: 100%;
-        background-color: rgb(255, 255, 255); 
+        background-color: rgb(255, 255, 255);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -251,8 +252,10 @@ button {
     }
 
     .right-side-img {
-        background-image: url('public/images/#379_fitness_flatline.jpg');
-        background-color: orange; /* to help visualize */
+        background-image: url("/images/treadmill.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
         height: 400px;
         width: 400px;
     }
