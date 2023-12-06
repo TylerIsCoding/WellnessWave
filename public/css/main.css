@@ -1,21 +1,22 @@
 /* style.css */
-@import 'reset.css';
-@import 'typography.css';
-@import 'layout.css';
-@import 'navigation.css';
-@import 'custom-styles.css';
-@import 'responsive.css';
-@import 'header-footer.css';
-@import 'login-signup.css';
-@import 'normalize.css';
-@import 'style.css';
+@import "reset.css";
+@import "typography.css";
+@import "layout.css";
+@import "navigation.css";
+@import "custom-styles.css";
+@import "responsive.css";
+@import "header-footer.css";
+@import "login-signup.css";
+@import "normalize.css";
+@import "style.css";
 
 :root {
-  /* Define color variables */
-  --background-color: #CDEBFF;
-  --background-Two-color: #FFF;
-  --text-color: #373947;
-  --buttons-color: #3782FF;
+    /* Define color variables */
+    --background-color: #cdebff;
+    --background-Two-color: #fff;
+    --text-color: #373947;
+    --buttons-color: #3782ff;
+    --buttons-color-hover: #6ba1ff;
 }
 
 /* Import other stylesheets */
