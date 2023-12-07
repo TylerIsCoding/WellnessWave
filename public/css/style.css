@@ -127,7 +127,9 @@ input {
     margin-bottom: 0.5rem;
 }
 
-button {
+/* This button is no longer used. I commented it out just to have it for styling reference in the future. */
+
+/* button {
     padding: 1rem;
     background-color: var(--buttons-color);
     border-radius: 5px;
@@ -140,6 +142,27 @@ button {
     height: 50px;
     font-size: 18px;
     font-weight: 800;
+} */
+
+.button__login {
+    padding: 1rem;
+    background-color: var(--buttons-color);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 420px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    margin: 1rem;
+    transition: all 0.2s;
+}
+
+.button__login:hover {
+    background-color: var(--buttons-color-hover);
 }
 
 .forget-pass {
