@@ -9,4 +9,8 @@ router.get("/", (req, res) => {
     req.oidc.isAuthenticated() ? res.render("profile") : res.render("index");
 });
 
+router.get("/about", (req, res) => {
+    res.render("about");
+});
+
 module.exports = router;

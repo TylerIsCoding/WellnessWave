@@ -1,3 +1,5 @@
+/* Base styles */
+
 img {
     max-width: 100%;
     height: auto;
@@ -10,6 +12,18 @@ img {
 ul,
 ol {
     list-style: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Mobile Header  */
@@ -50,6 +64,10 @@ ol {
     color: rgb(150, 150, 150);
 }
 
+.a__selected {
+    color: var(--buttons-color) !important;
+}
+
 .desktop-header ul {
     display: flex;
     gap: 6rem;
@@ -68,11 +86,6 @@ ol {
 }
 
 /* Login Section Majority Mobile (some generic styling that rolls over) */
-
-form {
-    display: flex;
-    flex-direction: column;
-}
 
 .login-side h1 {
     font-weight: 400;
@@ -130,30 +143,6 @@ form {
     margin: 0 auto;
 }
 
-input {
-    padding: 1rem;
-    border-radius: 5px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-/* This button is no longer used. I commented it out just to have it for styling reference in the future. */
-
-/* button {
-    padding: 1rem;
-    background-color: var(--buttons-color);
-    border-radius: 5px;
-    border: none;
-    margin-top: 3rem;
-    color: white;
-    text-transform: uppercase;
-    cursor: pointer;
-    width: 420px;
-    height: 50px;
-    font-size: 18px;
-    font-weight: 800;
-} */
-
 .button__login {
     padding: 1rem;
     background-color: var(--buttons-color);
@@ -205,6 +194,33 @@ input {
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: right 10px center;
+}
+
+.p__hero_text {
+    width: 50%;
+    text-align: center;
+}
+
+.p__side_text {
+    font-size: 1.2rem;
+}
+
+.div__about_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.div__vertical_half {
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.div__vertical_half img {
+    width: 60%;
 }
 
 /* Example media query for smaller screens */
@@ -261,7 +277,8 @@ input {
         align-items: center;
     }
 
-    .landing-page-img {
+    .landing-page-img,
+    .about-page-img {
         background-image: url("/images/runningDude.svg"); /*for desktop it's the running dude*/
         background-position: center;
         background-repeat: no-repeat;
@@ -269,6 +286,10 @@ input {
         height: 50%;
         width: 90%;
         margin: 2rem;
+    }
+
+    .about-page-img {
+        background-image: url("/images/jumprope.svg"); /*for desktop it's the running dude*/
     }
 
     .right-side-container {

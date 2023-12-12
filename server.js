@@ -22,6 +22,7 @@ app.use(auth(config));
 app.use(express.static(__dirname + "/public"));
 
 app.use("/", mainRouter);
+app.use("/about", mainRouter);
 
 app.listen(3000, function () {
     console.log("Listening on http://localhost:3000");
