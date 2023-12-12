@@ -1,24 +1,43 @@
 body {
-  font-family:  Nunito Sans; 
+    font-family: Nunito Sans;
 }
 
 h1 {
-  color: #373947; 
-  font-size: 40px; 
-  font-family: Nunito Sans; 
-  font-weight: 800; 
-  word-wrap: break-word;
-  padding-top: 10px;
-  padding-bottom: 10px;
+    color: #373947;
+    font-size: 40px;
+    font-family: Nunito Sans;
+    font-weight: 800;
+    word-wrap: break-word;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
 p {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #373947; 
-  font-size: 25px; 
-  font-family: Nunito Sans; 
-  font-weight: 600; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #373947;
+    font-size: 25px;
+    font-family: Nunito Sans;
+    font-weight: 600;
 }
+
 a {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+.a__selected {
+    color: var(--buttons-color) !important;
+}
+
+.login-side h1 {
+    font-weight: 400;
+}
+
+.p__hero_text {
+    width: 50%;
+    text-align: center;
+}
+
+.p__side_text {
+    font-size: 1.2rem;
 }
