@@ -10,9 +10,9 @@ const config = {
     authRequired: false,
     auth0Logout: true,
     secret: process.env.WELLNESS_WAVE_AUTH0_SECRET,
-    baseURL: "http://localhost:3000",
+    baseURL: "https://localhost:3000",
     clientID: process.env.WELLNESS_WAVE_AUTH0_CLIENT_ID,
-    issuerBaseURL: `${process.env.WELLNESS_WAVE_AUTH0_DOMAIN}`,
+    issuerBaseURL: process.env.WELLNESS_WAVE_AUTH0_DOMAIN,
 };
 
 // auth router attaches /login, /logout, and /callback routes to the baseURL
@@ -37,5 +37,5 @@ app.get("/profile", requiresAuth(), (req, res) => {
 });
 
 app.listen(3000, function () {
-    console.log("Listening on http://localhost:3000");
+    console.log("Listening on https://localhost:3000");
 });
