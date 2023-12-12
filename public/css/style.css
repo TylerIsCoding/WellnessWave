@@ -31,6 +31,7 @@ ol {
 .desktop-header {
     padding: 2rem;
     background-color: #c2e7ff;
+    border-top-left-radius: 10px;
 }
 
 .desktop-header a {
@@ -42,6 +43,7 @@ ol {
     font-size: 2rem;
     font-weight: bolder;
     transition: all 0.2s;
+    white-space: nowrap;
 }
 
 .desktop-header a:hover {
@@ -234,9 +236,12 @@ input {
         display: flex;
     }
 
-    .image-side {
+    .left-side-container {
         background-color: var(--background-color);
         flex: 0 0 55%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin: 10px;
     }
 
     .login-side {
@@ -248,7 +253,7 @@ input {
     }
 
     .landing-page-img-container {
-        height: 100%;
+        height: 90%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -276,7 +281,6 @@ input {
     }
 
     .login-side {
-        background-color: bisque; /* to help visualize*/
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -284,7 +288,7 @@ input {
     }
 
     .right-side-img {
-        background-image: url("/images/treadmill.jpg");
+        background-image: url("/images/fitness-flatline-16b18-2.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
