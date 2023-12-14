@@ -120,14 +120,15 @@ input {
 }
 
 .or-text {
+    font-size: 1.6rem;
     color: #808080;
     padding: 1rem;
 }
 
 .or-divider {
-    flex-grow: 1;
+    width: 100px;
     height: 1px;
-    background-color: #ccc; /* Adjust the color as needed */
+    background-color: #808080; /* Adjust the color as needed */
 }
 
 .login-side {
@@ -175,14 +176,14 @@ input {
 }
 
 .email {
-    background-image: url("/images/email.png");
+    background-image: url("/images/icons/email.png");
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: right 10px center;
 }
 
 .password {
-    background-image: url("/images/lock.png");
+    background-image: url("/images/icons/lock.png");
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: right 10px center;
@@ -262,7 +263,6 @@ input {
 
     .landing-page-img,
     .about-page-img {
-        background-image: url("/images/runningDude.svg"); /*for desktop it's the running dude*/
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -271,8 +271,12 @@ input {
         margin: 2rem;
     }
 
+    .landing-page-img {
+        background-image: url("/images/login-jogger.svg");
+    }
+
     .about-page-img {
-        background-image: url("/images/jumprope.svg"); /*for desktop it's the running dude*/
+        background-image: url("/images/about-checklist.svg"); /*for desktop it's the running dude*/
     }
 
     .right-side-container {
@@ -292,11 +296,13 @@ input {
     }
 
     .right-side-img {
-        background-image: url("/images/fitness-flatline-16b18-2.svg");
+        background-image: url("/images/login-auth.svg");
+        background-color: rgb(210, 210, 210);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         height: 400px;
         width: 400px;
+        border-radius: 10px;
     }
 }
