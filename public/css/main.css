@@ -9,6 +9,7 @@
 @import "login-signup.css";
 @import "normalize.css";
 @import "style.css";
+@import "buttons.css";
 
 :root {
     /* Define color variables */
