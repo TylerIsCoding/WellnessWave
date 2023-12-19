@@ -2,39 +2,65 @@ body {
     font-family: Nunito Sans;
 }
 
+label{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
 h1 {
-    color: #373947;
-    font-size: 40px;
+    color: var(--text-color);
     font-family: Nunito Sans;
     font-weight: 800;
     word-wrap: break-word;
-    padding-top: 10px;
-    padding-bottom: 10px;
+}
+
+h2 {
+    color: var(--text-color);
+    font-size: 2rem;
+    font-family: Nunito Sans;
 }
 
 p {
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #373947;
+    color: var(--text-color);
     font-size: 25px;
     font-family: Nunito Sans;
     font-weight: 600;
 }
 
-a {
+.nav-link {
     text-decoration: none;
+    color: var(--text-color); /* Default color */
+    font-size: large;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+/* Change color on hover */
+.nav-link:hover {
+    color: var(--buttons-color-hover); /* Color on hover */
+  }
+
+.nav-link:active,
+.nav-link:focus {
+    color: var(--buttons-color);
 }
 
 .a__selected {
-    color: var(--buttons-color) !important;
-}
+    text-decoration: none;
+    color: var(--buttons-color); /* Initial color for selected links */
+    font-size: x-large;
+    font-weight: bold;
+    white-space: nowrap;
+  }
 
 .login-side h1 {
     font-weight: 400;
 }
 
 .p__hero_text {
-    width: 50%;
+    width: 75%;
     text-align: center;
 }
 
