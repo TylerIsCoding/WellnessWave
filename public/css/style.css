@@ -26,19 +26,62 @@ input {
     margin-bottom: 0.5rem;
 }
 
-/* Mobile Header  */
-
+/* Mobile Header */
 .mobile-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     height: 60px;
+    position: relative;
+
 }
 
 .mobile-header a {
     width: 60px;
 }
+
+.mobile-menu {
+    background-color: rgb(184, 202, 248);
+    display: none; /* Hide the menu by default */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh; /* Cover the entire viewport height */
+    justify-content: center;/* Center items vertically */
+    align-items: start; /* Center items horizontally */
+    z-index: 1;
+}
+
+.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+
+
+/* Add styling for the close icon */
+.close-ico {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    right: 30px;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+/* Add styling for the menu icon */
+.menu-ico {
+    cursor: pointer;
+    display: inline-block;
+    font-size: x-large;
+    font-weight: 500;
+}
+
 
 /* Desktop Header */
 
@@ -203,6 +246,10 @@ input {
 @media (min-width: 1024px) {
     .mobile-header {
         display: none; /* Hide the mobile menu for screens wider than 1024 pixels */
+    }
+
+    .mobile-menu {
+        display: none;
     }
 
     .desktop-menu {

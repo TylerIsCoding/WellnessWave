@@ -67,3 +67,13 @@ p {
 .p__side_text {
     font-size: 1.2rem;
 }
+
+.header-navigation a {
+    /* Add styling for each menu link */
+    padding-bottom: 10%; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem; 
+    white-space: nowrap;
+    margin-top: 25%;
+}
