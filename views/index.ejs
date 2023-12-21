@@ -11,27 +11,33 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <script src="../js/main.js"></script>
     </head>
     <body>
         <header>
             <!-- Mobile Header -->
             <section class="mobile-header">
-                <a href="/"
-                    ><img src="/images/icons/logo.png" alt="wellness wave logo"
-                /></a>
-                <img
-                    src="/images/icons/hamburger-menu.svg"
-                    alt="hamburger menu"
-                />
+                <a href="/"><img src="/images/icons/logo.png" alt="wellness wave logo"/></a>
+                <div>
+                    <i onclick="toggleMenu()" id="menu-icon" class="fa fa-bars menu-ico"></i>
+                    <i onclick="toggleMenu()" id="close-icon" class="fas fa-times close-ico"></i>
+                </div>
             </section>
-
+        
             <!-- Mobile Menu -->
-            <div id="mobile-menu">
+            <div class="mobile-menu" id="mobile-menu">
                 <!-- Mobile menu links go here -->
+                <nav id="header-navigation" class="header-navigation">
+                    <a href="/" class="a__selected">Wellness Wave</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/contact" class="nav-link">Contact Us</a>
+                </nav>
             </div>
-
+        
             <!-- Desktop Header -->
         </header>
+        
 
         <section class="login-section">
             <div class="left-side-container">
@@ -43,7 +49,7 @@
                             /></a>
                         </li>
                         <li><a href="/" class="a__selected">Wellness Wave</a></li>
-                        <li><a href="/about" class="nav-link ">About</a></li>
+                        <li><a href="/about" class="nav-link">About</a></li>
                         <li><a href="/contact" class="nav-link">Contact Us</a></li>
                     </ul>
                 </nav>
