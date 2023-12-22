@@ -77,9 +77,10 @@ input {
 }
 
 .landing-page-img {
-    /*for mobile it's the jumprope*/
-    background-image: url("/images/jumprope.svg");
+    background-image: url("/images/login-jogger.svg");
 }
+
+
 
 /* Login Section Majority Mobile (some generic styling that rolls over) */
 
@@ -211,6 +212,31 @@ input {
 @media (max-width: 1024px) {
     .desktop-header {
         display: none;
+    }
+
+    .landing-page-img {
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 1rem;
+    }
+    .left-side-container,.right-side-container {
+        text-align: center;
+        margin: 0.5rem;
+    }
+    .right-side-container {
+        text-align: center;
+        margin:0.5rem 0.5rem 2rem 0.5rem
+    }
+
+    .right-side-img {
+        background-image: url("/images/login-auth.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 300px;
+    }
+    .or-container {
+        justify-content: center;
     }
 }
 
