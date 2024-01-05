@@ -1,31 +1,21 @@
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
 
-.button__login {
-  padding: 1rem;
-  background-color: var(--buttons-color);
-  border-radius: 5px;
-  border: none;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
-  width: 420px;
-  height: 50px;
-  font-size: 18px;
-  font-weight: 800;
-  text-align: center;
-  text-decoration: none;
-  margin: 1rem;
-  transition: all 0.2s;
-}
-
-.contact-us-form button {
-  background-color: var(--buttons-color);
-  border: none;
-  width: 100px;
-  color: var(--background-Two-color);
-  padding: 1%;
-  border-radius: 10px;
-
+.button__main {
+    padding: 1rem;
+    background-color: var(--buttons-color);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 420px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    margin: 1rem;
+    transition: all 0.2s;
 }

@@ -4,19 +4,134 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Wellness Wave - Profile</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,700&family=Inter:wght@400;500;600;700&family=Istok+Web&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&family=Poppins:wght@400;700&family=Roboto:wght@100;400&family=Source+Sans+3&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
     </head>
     <body>
-        <nav class="desktop-header">
-            <ul>
-                <li class="logo">
-                    <a href=""><img src="/images/logo.png" alt="Logo" /></a>
-                </li>
-                <li><a href="/">Wellness Wave</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-                <li><a href="/logout/">Log Out</a></li>
-            </ul>
-        </nav>
-        <h1>Profile page</h1>
+        <section class="section__profile">
+            <div class="container__profile_left">
+                <nav class="desktop-header">
+                    <ul>
+                        <li class="logo">
+                            <a href=""
+                                ><img src="/images/icons/logo.png" alt="Logo"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="/" class="a__selected">Profile</a>
+                        </li>
+                        <li><a href="#" class="nav-link">Placeholder</a></li>
+                        <li>
+                            <a href="#" class="nav-link">Placeholder</a>
+                        </li>
+                        <li><a href="/logout/" class="nav-link">Log Out</a></li>
+                    </ul>
+                </nav>
+                <div class="container__profile_update">
+                    <h1>My Information</h1>
+                    <form action="">
+                        <div class="container__form">
+                            <div class="container__form_half">
+                                <label class="container__info" for="name">
+                                    Name
+                                    <input
+                                        class="input__profile"
+                                        type="text"
+                                        placeholder="Update your name"
+                                    />
+                                </label>
+                                <label class="container__info" for="pass">
+                                    Update Password
+                                    <input
+                                        class="input__profile"
+                                        type="password"
+                                        placeholder="Update your password"
+                                    />
+                                </label>
+                                <label class="container__info" for="country">
+                                    Country
+                                    <input
+                                        type="text"
+                                        name="country"
+                                        id="country"
+                                        class="input__profile"
+                                        placeholder="Update your country"
+                                    />
+                                </label>
+                                <label class="container__info" for="height">
+                                    Starting Height
+                                    <input
+                                        type="number"
+                                        name="height"
+                                        id="height"
+                                        class="input__profile"
+                                        placeholder="Update your starting height"
+                                    />
+                                </label>
+                            </div>
+                            <div class="container__form_half">
+                                <label class="container__info" for="email">
+                                    Email
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        class="input__profile"
+                                        placeholder="Update your email"
+                                    />
+                                </label>
+                                <label class="container__info" for="phone">
+                                    Phone Number
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        id="phone"
+                                        class="input__profile"
+                                        placeholder="Update your phone number"
+                                    />
+                                </label>
+                                <label class="container__info" for="dob">
+                                    Date of Birth
+                                    <input
+                                        type="date"
+                                        name="dob"
+                                        id="dob"
+                                        class="input__profile"
+                                    />
+                                </label>
+                                <label class="container__info" for="weight">
+                                    Starting Weight
+                                    <input
+                                        type="number"
+                                        name="weight"
+                                        id="weight"
+                                        class="input__profile"
+                                        placeholder="Update your starting weight"
+                                    />
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                    <button type="submit" class="button__main">
+                        Submit Changes
+                    </button>
+                </div>
+            </div>
+            <div class="container__profile_right">
+                <section class="container__profile_img">
+                    <img src="" alt="" class="img__profile" />
+                    <h2>Your Name Here</h2>
+                </section>
+            </div>
+        </section>
     </body>
 </html>

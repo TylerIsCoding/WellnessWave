@@ -10,6 +10,8 @@
 @import "normalize.css";
 @import "style.css";
 @import "buttons.css";
+@import "containers.css";
+@import "images.css";
 
 :root {
     /* Define color variables */

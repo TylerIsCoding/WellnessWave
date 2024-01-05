@@ -1,10 +1,5 @@
 /* Base styles */
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -26,6 +21,12 @@ input {
     margin-bottom: 0.5rem;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 /* Mobile Header */
 .mobile-header {
     display: flex;
@@ -34,7 +35,6 @@ input {
     padding: 10px;
     height: 60px;
     position: relative;
-
 }
 
 .mobile-header a {
@@ -50,7 +50,7 @@ input {
     right: 0;
     width: 100%;
     height: 100vh; /* Cover the entire viewport height */
-    justify-content: center;/* Center items vertically */
+    justify-content: center; /* Center items vertically */
     align-items: start; /* Center items horizontally */
     z-index: 1;
 }
@@ -60,8 +60,6 @@ input {
     flex-direction: column;
     margin-top: 10%;
 }
-
-
 
 /* Add styling for the close icon */
 .close-ico {
@@ -81,7 +79,6 @@ input {
     font-size: x-large;
     font-weight: 500;
 }
-
 
 /* Desktop Header */
 
@@ -118,12 +115,6 @@ input {
     width: 55px;
 }
 
-.landing-page-img {
-    background-image: url("/images/login-jogger.svg");
-}
-
-
-
 /* Login Section Majority Mobile (some generic styling that rolls over) */
 
 .header-detail {
@@ -144,10 +135,6 @@ input {
     border-radius: 5px;
     gap: 1rem;
     font-weight: 500;
-}
-
-.google-signin-button img {
-    width: 25px;
 }
 
 .google-signin-button + span {
@@ -178,8 +165,6 @@ input {
     width: 85%;
     margin: 0 auto;
 }
-
-
 
 .button__login:hover {
     background-color: var(--buttons-color-hover);
@@ -231,8 +216,11 @@ input {
     width: 50%;
 }
 
-.div__vertical_half img {
-    width: 60%;
+.input__profile {
+    width: 90%;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
 }
 
 /* Example media query for smaller screens */
@@ -241,27 +229,19 @@ input {
         display: none;
     }
 
-    .landing-page-img {
-        height: 300px;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin: 1rem;
-    }
-    .left-side-container,.right-side-container {
+    .left-side-container,
+    .container__profile_left,
+    .right-side-container,
+    .container__profile_right {
         text-align: center;
         margin: 0.5rem;
     }
-    .right-side-container {
+    .right-side-container,
+    .container__right {
         text-align: center;
-        margin:0.5rem 0.5rem 2rem 0.5rem
+        margin: 0.5rem 0.5rem 2rem 0.5rem;
     }
 
-    .right-side-img {
-        background-image: url("/images/login-auth.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 300px;
-    }
     .or-container {
         justify-content: center;
     }
@@ -293,7 +273,8 @@ input {
         display: flex;
     }
 
-    .left-side-container {
+    .left-side-container,
+    .container__profile_left {
         background-color: var(--background-color);
         flex: 0 0 55%;
         border-top-left-radius: 10px;
@@ -305,42 +286,8 @@ input {
         flex: 0 0 25%; /* 25% width for form-side */
     }
 
-    .image-side img {
-        width: 100%;
-    }
-
-    .landing-page-img-container {
-        height: 90%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .landing-page-img,
-    .about-page-img {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 70%;
-        width: 100%;
-    }
-
-    .landing-page-img {
-        background-image: url("/images/exercise-workout.svg");
-    }
-
-    .about-page-img {
-        background-image: url("/images/about-checklist.svg"); /*for desktop it's the running dude*/
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 50%;
-        width: 100%;
-    }
-
-    .right-side-container {
+    .right-side-container,
+    .container__profile_right {
         height: 100%;
         width: 100%;
         background-color: rgb(255, 255, 255);
@@ -354,15 +301,5 @@ input {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .right-side-img {
-        background-image: url("/images/login-auth.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 400px;
-        width: 400px;
-        border-radius: 10px;
     }
 }
